@@ -155,8 +155,8 @@ ul {
   background-image: url(../img/tv-old.jpg);
   -webkit-background-clip: text;
           background-clip: text;
-  -webkit-animation: blink-logo 6.9s linear forwards;
-          animation: blink-logo 6.9s linear forwards;
+  -webkit-animation: blink-logo 9s linear forwards;
+          animation: blink-logo 9s linear forwards;
 }
 
 .header__subtitle {
