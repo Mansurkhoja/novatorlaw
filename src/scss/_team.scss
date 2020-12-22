@@ -1,0 +1,100 @@
+.team {
+    position: relative;
+    // background-color: red;
+}
+.team__item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 58%;
+        background: linear-gradient(180deg, rgba(196, 196, 196, 0) 46.15%, #0099cc 100%);
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+    }
+    &:hover::before {
+        opacity: 1;
+        visibility: visible;
+    }
+    .team__descr {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0 25px 15px;
+        font-size: 18px;
+        color: #ffffff;
+        z-index: 20;
+        transform: translateY(100%);
+        visibility: hidden;
+        transition: 0.4s;
+        font-weight: 400;
+    }
+    &:hover .team__descr {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+.team__name {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.team__inner {
+    padding: 100px 0 70px;
+}
+
+.team__title {
+    color: $color-white;
+    display: inline-block;
+    &::before {
+        content: "";
+        //width: 60px;
+        width: 10%;
+        height: 1px;
+        background: $color-white;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.team__text {
+    max-width: 370px;
+    font-weight: 300;
+    // padding-left: 30px;
+    text-align: left;
+    margin: 0 0 0 auto;
+}
+.team__decrs {
+    width: 50%;
+    text-align: right;
+    //padding-right: 38px;
+    padding: 0 38px;
+}
+.team__carousel {
+    padding: 72px 0 72px 160px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.team__bg {
+    z-index: -1;
+    background-color: $color-blue;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 100%;
+    left: 0;
+    img {
+        width: auto;
+        height: calc(100% + 30px);
+        margin-top: -30px;
+    }
+}

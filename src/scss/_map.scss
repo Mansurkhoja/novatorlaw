@@ -1,0 +1,56 @@
+.map {
+    padding: 60px 0 100px;
+    background-image: url(../img/wave-left.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.map__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    //padding-left: 30px;
+}
+.map__item {
+    position: relative;
+}
+.map__title {
+    display: inline-block;
+    text-align: left;
+    margin: 0 68px 29px 30px;
+    &::after {
+        content: url("data:image/svg+xml,%3Csvg width='261' height='8' viewBox='0 0 261 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='87' y1='4.5' x2='261' y2='4.5' stroke='%230099CC' /%3E%3Cline y1='4.5' x2='63' y2='4.5' stroke='%230099CC' /%3E%3Cpath d='M71.3536 4.35355C71.5488 4.15829 71.5488 3.84171 71.3536 3.64645L68.1716 0.464466C67.9763 0.269204 67.6597 0.269204 67.4645 0.464466C67.2692 0.659728 67.2692 0.976311 67.4645 1.17157L70.2929 4L67.4645 6.82843C67.2692 7.02369 67.2692 7.34027 67.4645 7.53553C67.6597 7.7308 67.9763 7.7308 68.1716 7.53553L71.3536 4.35355ZM70 4.5H71V3.5H70V4.5Z' fill='%230099CC' /%3E%3Cpath d='M76.3536 4.35355C76.5488 4.15829 76.5488 3.84171 76.3536 3.64645L73.1716 0.464466C72.9763 0.269204 72.6597 0.269204 72.4645 0.464466C72.2692 0.659728 72.2692 0.976311 72.4645 1.17157L75.2929 4L72.4645 6.82843C72.2692 7.02369 72.2692 7.34027 72.4645 7.53553C72.6597 7.7308 72.9763 7.7308 73.1716 7.53553L76.3536 4.35355ZM75 4.5H76V3.5H75V4.5Z' fill='%230099CC' /%3E%3Cpath d='M81.3536 4.35355C81.5488 4.15829 81.5488 3.84171 81.3536 3.64645L78.1716 0.464466C77.9763 0.269204 77.6597 0.269204 77.4645 0.464466C77.2692 0.659728 77.2692 0.976311 77.4645 1.17157L80.2929 4L77.4645 6.82843C77.2692 7.02369 77.2692 7.34027 77.4645 7.53553C77.6597 7.7308 77.9763 7.7308 78.1716 7.53553L81.3536 4.35355ZM80 4.5H81V3.5H80V4.5Z' fill='%230099CC' /%3E%3C/svg%3E%0A");
+        display: block;
+    }
+}
+.map__directions {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.84);
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 18px 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: $color-blue;
+    line-height: 1.2;
+}
+.map__directions-lists {
+    display: flex;
+    flex: 1;
+    // margin-left: 60px;
+    li {
+        margin: 0 0 0 50px;
+    }
+}
+.map__directions-link {
+    font-weight: 500;
+    font-size: 20px;
+    color: $color-blue;
+    line-height: 1.5;
+    text-decoration: none;
+    border-bottom: 2px dotted #09c;
+}

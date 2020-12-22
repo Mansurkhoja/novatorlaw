@@ -1,0 +1,25 @@
+.aim {
+    padding: 100px 0 0;
+    overflow: hidden;
+}
+.aim__items {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+}
+.aim__item {
+    padding: 0 0 0 100px;
+    &:first-child{
+        padding: 0 100px 0 0;
+        margin-top: 100px;
+        margin-bottom: -100px;
+    }
+}
+.aim__img {
+    text-align: right;
+    margin-top: -110px;
+    padding: 80px 0 50px;
+    .simpleParallax{
+        overflow: visible !important;
+    }
+}

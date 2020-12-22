@@ -1,0 +1,56 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    min-height: 537px;
+    max-height: 1100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header__inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    color: $color-white;
+    padding: 0 30px 115px;
+}
+.header__logo {
+    font-family: $font-family-base;
+    font-size: 180px;
+    font-weight: 600;
+    line-height: 1.21;
+    text-transform: uppercase;
+    margin: 45px 0;
+    color: transparent;
+    opacity: 0;
+    background-image: url(../img/tv-old.jpg);
+    background-clip: text;
+    animation: blink-logo 6.9s linear forwards;
+}
+.header__subtitle {
+    font-size: 29px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+@keyframes blink-logo {
+    0% {
+        opacity: 0.1;
+        background-position-x: 0;
+    }
+    15% {
+        opacity: 0.5;
+        background-position-x: -9999%;
+    }
+    99% {
+        opacity: 0.99;
+        background-position-x: 9999%;
+    }
+    100% {
+        opacity: 1;
+        background-image: none;
+        color: $color-white;
+    }
+}

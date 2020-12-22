@@ -1,0 +1,47 @@
+.show-site {
+    background-color: $color-blue;
+    position: relative;
+    background-image: url(../img/wave-right.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.show-site__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.show-site__bg {
+    position: relative;
+    z-index: 2;
+}
+.show-site__img {
+    padding: 3% 2% 0;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.show-site__logo {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+}
+.show-site__logo-title {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 11px;
+}
