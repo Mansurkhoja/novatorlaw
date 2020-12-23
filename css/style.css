@@ -163,7 +163,6 @@ ul {
   font-size: 29px;
   line-height: 1.2;
   font-weight: 400;
-  /* header__subtitle */
 }
 
 @-webkit-keyframes blink-logo {
@@ -1295,6 +1294,7 @@ ul {
   background-image: url(../img/wave-left.png);
   background-repeat: no-repeat;
   background-size: auto;
+  overflow: hidden;
 }
 
 .map__inner {
