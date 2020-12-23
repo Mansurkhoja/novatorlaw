@@ -163,6 +163,7 @@ ul {
   font-size: 29px;
   line-height: 1.2;
   font-weight: 400;
+  /* header__subtitle */
 }
 
 @-webkit-keyframes blink-logo {
